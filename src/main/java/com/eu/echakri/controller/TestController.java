@@ -9,6 +9,7 @@ public class TestController {
 
     @GetMapping("/demo")
     public ResponseEntity<String> demo() {
+        String s = '';
         return ResponseEntity.ok("Hello from secured url...!");
     }
 
