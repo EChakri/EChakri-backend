@@ -9,11 +9,12 @@ public class TestController {
 
     @GetMapping("/demo")
     public ResponseEntity<String> demo() {
+        String s = '';
         return ResponseEntity.ok("Hello from secured url...!");
     }
 
     @GetMapping("/admin_only")
-    public  adminOnly() {
+    public ResponseEntity<String> adminOnly() {
         return ResponseEntity.ok("Hello from admin only url");
     }
 }
